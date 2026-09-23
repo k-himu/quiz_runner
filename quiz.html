@@ -1,0 +1,466 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Custom CSE Multiple Choice Question Practice Test"
+    >
+
+    <title>CSE Mock Test</title>
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- =========================================================
+         MAIN APPLICATION
+         ========================================================= -->
+    <main class="quiz-app">
+
+        <!-- =====================================================
+             QUIZ HEADER
+             ===================================================== -->
+        <header class="quiz-header">
+
+            <div class="quiz-header-left">
+                <p class="quiz-label">CSE MOCK TEST</p>
+
+                <h1 id="quiz-title">
+                    Daily CSE Mock Test
+                </h1>
+
+                <p id="quiz-description" class="quiz-description">
+                    Custom 10-question Core CSE practice test
+                </p>
+            </div>
+
+            <div class="quiz-header-right">
+
+                <div class="quiz-stat">
+                    <span class="stat-label">Question</span>
+                    <span id="question-counter">1 / 10</span>
+                </div>
+
+                <div class="quiz-stat">
+                    <span class="stat-label">Time</span>
+                    <span id="timer">15:00</span>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =====================================================
+             PROGRESS BAR
+             ===================================================== -->
+        <div class="progress-section">
+
+            <div class="progress-info">
+                <span>Progress</span>
+                <span id="progress-percentage">10%</span>
+            </div>
+
+            <div class="progress-track">
+                <div
+                    id="progress-bar"
+                    class="progress-bar"
+                ></div>
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             QUESTION SCREEN
+             ===================================================== -->
+        <section
+            id="question-screen"
+            class="screen question-screen"
+        >
+
+            <!-- Question metadata -->
+            <div class="question-meta">
+
+                <span
+                    id="question-subject"
+                    class="subject-badge"
+                >
+                    DBMS
+                </span>
+
+                <span
+                    id="question-topic"
+                    class="topic-label"
+                >
+                    Normalization
+                </span>
+
+                <span
+                    id="question-difficulty"
+                    class="difficulty-label"
+                >
+                    Medium
+                </span>
+
+            </div>
+
+
+            <!-- Question -->
+            <div class="question-container">
+
+                <p
+                    id="question-number"
+                    class="question-number"
+                >
+                    Question 01
+                </p>
+
+                <h2
+                    id="question-text"
+                    class="question-text"
+                >
+                    Sample question goes here.
+                </h2>
+
+            </div>
+
+
+            <!-- =================================================
+                 OPTIONAL CODE / PSEUDOCODE BLOCK
+                 Hidden when the question does not contain code.
+                 ================================================= -->
+            <div
+                id="code-container"
+                class="code-container hidden"
+            >
+                <pre><code id="question-code"></code></pre>
+            </div>
+
+
+            <!-- =================================================
+                 ANSWER OPTIONS
+                 ================================================= -->
+            <div
+                id="options-container"
+                class="options-container"
+            >
+
+                <button
+                    type="button"
+                    class="option-card"
+                    data-option="A"
+                >
+                    <span class="option-letter">A</span>
+
+                    <span
+                        id="option-A"
+                        class="option-text"
+                    >
+                        Option A
+                    </span>
+                </button>
+
+
+                <button
+                    type="button"
+                    class="option-card"
+                    data-option="B"
+                >
+                    <span class="option-letter">B</span>
+
+                    <span
+                        id="option-B"
+                        class="option-text"
+                    >
+                        Option B
+                    </span>
+                </button>
+
+
+                <button
+                    type="button"
+                    class="option-card"
+                    data-option="C"
+                >
+                    <span class="option-letter">C</span>
+
+                    <span
+                        id="option-C"
+                        class="option-text"
+                    >
+                        Option C
+                    </span>
+                </button>
+
+
+                <button
+                    type="button"
+                    class="option-card"
+                    data-option="D"
+                >
+                    <span class="option-letter">D</span>
+
+                    <span
+                        id="option-D"
+                        class="option-text"
+                    >
+                        Option D
+                    </span>
+                </button>
+
+            </div>
+
+
+            <!-- =================================================
+                 ANSWER FEEDBACK
+                 ================================================= -->
+            <div
+                id="answer-feedback"
+                class="answer-feedback hidden"
+                aria-live="polite"
+            >
+
+                <div class="feedback-header">
+
+                    <span
+                        id="feedback-icon"
+                        class="feedback-icon"
+                    >
+                        ✓
+                    </span>
+
+                    <h3 id="feedback-title">
+                        Correct
+                    </h3>
+
+                </div>
+
+                <p id="feedback-message">
+                    Your answer is correct.
+                </p>
+
+                <div class="explanation-container">
+
+                    <span class="explanation-label">
+                        Explanation
+                    </span>
+
+                    <p id="answer-explanation">
+                        Explanation goes here.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 QUESTION ACTIONS
+                 ================================================= -->
+            <div class="question-actions">
+
+                <button
+                    type="button"
+                    id="check-answer-btn"
+                    class="primary-button"
+                >
+                    Check Answer
+                </button>
+
+                <button
+                    type="button"
+                    id="next-question-btn"
+                    class="primary-button hidden"
+                >
+                    Next Question
+                    <span aria-hidden="true">→</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             RESULTS SCREEN
+             ===================================================== -->
+        <section
+            id="results-screen"
+            class="screen results-screen hidden"
+        >
+
+            <div class="results-header">
+
+                <p class="results-label">
+                    QUIZ COMPLETE
+                </p>
+
+                <h2>
+                    Your Results
+                </h2>
+
+                <p id="results-message">
+                    You have completed the quiz.
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 SCORE SUMMARY
+                 ================================================= -->
+            <div class="score-summary">
+
+                <div class="score-number-container">
+
+                    <span
+                        id="final-score"
+                        class="final-score"
+                    >
+                        7
+                    </span>
+
+                    <span class="score-total">
+                        / 10
+                    </span>
+
+                </div>
+
+                <p class="score-label">
+                    Overall Score
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 PIE / DONUT CHART
+                 ================================================= -->
+            <div class="chart-container">
+
+                <div
+                    id="score-chart"
+                    class="score-chart"
+                    role="img"
+                    aria-label="Quiz result chart"
+                >
+
+                    <div class="chart-center">
+
+                        <span
+                            id="score-percentage"
+                            class="chart-percentage"
+                        >
+                            70%
+                        </span>
+
+                        <span class="chart-caption">
+                            Score
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 RIGHT / WRONG SUMMARY
+                 ================================================= -->
+            <div class="result-breakdown">
+
+                <div class="result-card correct-result">
+
+                    <span class="result-indicator"></span>
+
+                    <div>
+                        <span class="result-label">
+                            Correct
+                        </span>
+
+                        <strong id="correct-count">
+                            7
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="result-card incorrect-result">
+
+                    <span class="result-indicator"></span>
+
+                    <div>
+                        <span class="result-label">
+                            Incorrect
+                        </span>
+
+                        <strong id="incorrect-count">
+                            3
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 RESULT ACTIONS
+                 ================================================= -->
+            <div class="results-actions">
+
+                <button
+                    type="button"
+                    id="restart-btn"
+                    class="primary-button"
+                >
+                    Take Quiz Again
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         LOADING / ERROR MESSAGE
+         ========================================================= -->
+    <div
+        id="loading-screen"
+        class="loading-screen"
+        aria-live="polite"
+    >
+
+        <div class="loading-content">
+
+            <div class="loading-spinner"></div>
+
+            <p id="loading-message">
+                Loading quiz...
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+         ========================================================= -->
+    <script src="backend.js"></script>
+
+</body>
+</html>
+```

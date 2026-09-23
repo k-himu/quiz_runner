@@ -1,0 +1,331 @@
+{
+  "quiz": {
+    "title": "Daily CSE Mock Test",
+    "description": "Custom 10-question Core CSE practice test",
+    "subject": "Mixed CSE",
+    "durationMinutes": 15,
+    "totalQuestions": 10
+  },
+  "questions": [
+    {
+      "id": 1,
+      "subject": "DBMS",
+      "topic": "Normalization",
+      "difficulty": "Medium",
+      "question": "Sample question goes here.",
+      "code": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Option A"
+        },
+        {
+          "id": "B",
+          "text": "Option B"
+        },
+        {
+          "id": "C",
+          "text": "Option C"
+        },
+        {
+          "id": "D",
+          "text": "Option D"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Explanation of the correct answer goes here.",
+      "tags": [
+        "sample",
+        "topic"
+      ]
+    },
+    {
+      "id": 2,
+      "subject": "Operating Systems",
+      "topic": "CPU Scheduling",
+      "difficulty": "Easy",
+      "question": "Sample question goes here.",
+      "code": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Option A"
+        },
+        {
+          "id": "B",
+          "text": "Option B"
+        },
+        {
+          "id": "C",
+          "text": "Option C"
+        },
+        {
+          "id": "D",
+          "text": "Option D"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Explanation of the correct answer goes here.",
+      "tags": [
+        "sample",
+        "topic"
+      ]
+    },
+    {
+      "id": 3,
+      "subject": "Computer Networks",
+      "topic": "OSI Model",
+      "difficulty": "Easy",
+      "question": "Sample question goes here.",
+      "code": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Option A"
+        },
+        {
+          "id": "B",
+          "text": "Option B"
+        },
+        {
+          "id": "C",
+          "text": "Option C"
+        },
+        {
+          "id": "D",
+          "text": "Option D"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Explanation of the correct answer goes here.",
+      "tags": [
+        "sample",
+        "topic"
+      ]
+    },
+    {
+      "id": 4,
+      "subject": "OOPS",
+      "topic": "Inheritance",
+      "difficulty": "Easy",
+      "question": "Sample question goes here.",
+      "code": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Option A"
+        },
+        {
+          "id": "B",
+          "text": "Option B"
+        },
+        {
+          "id": "C",
+          "text": "Option C"
+        },
+        {
+          "id": "D",
+          "text": "Option D"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Explanation of the correct answer goes here.",
+      "tags": [
+        "sample",
+        "topic"
+      ]
+    },
+    {
+      "id": 5,
+      "subject": "Pseudocode",
+      "topic": "Loops",
+      "difficulty": "Medium",
+      "question": "Sample question goes here.",
+      "code": "WRITE PSEUDOCODE HERE",
+      "options": [
+        {
+          "id": "A",
+          "text": "Option A"
+        },
+        {
+          "id": "B",
+          "text": "Option B"
+        },
+        {
+          "id": "C",
+          "text": "Option C"
+        },
+        {
+          "id": "D",
+          "text": "Option D"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Explanation of the correct answer goes here.",
+      "tags": [
+        "loops",
+        "pseudocode"
+      ]
+    },
+    {
+      "id": 6,
+      "subject": "DBMS",
+      "topic": "SQL",
+      "difficulty": "Medium",
+      "question": "Sample question goes here.",
+      "code": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Option A"
+        },
+        {
+          "id": "B",
+          "text": "Option B"
+        },
+        {
+          "id": "C",
+          "text": "Option C"
+        },
+        {
+          "id": "D",
+          "text": "Option D"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Explanation of the correct answer goes here.",
+      "tags": [
+        "SQL",
+        "database"
+      ]
+    },
+    {
+      "id": 7,
+      "subject": "Operating Systems",
+      "topic": "Deadlock",
+      "difficulty": "Hard",
+      "question": "Sample question goes here.",
+      "code": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Option A"
+        },
+        {
+          "id": "B",
+          "text": "Option B"
+        },
+        {
+          "id": "C",
+          "text": "Option C"
+        },
+        {
+          "id": "D",
+          "text": "Option D"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Explanation of the correct answer goes here.",
+      "tags": [
+        "deadlock",
+        "operating systems"
+      ]
+    },
+    {
+      "id": 8,
+      "subject": "Computer Networks",
+      "topic": "TCP/IP",
+      "difficulty": "Medium",
+      "question": "Sample question goes here.",
+      "code": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Option A"
+        },
+        {
+          "id": "B",
+          "text": "Option B"
+        },
+        {
+          "id": "C",
+          "text": "Option C"
+        },
+        {
+          "id": "D",
+          "text": "Option D"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Explanation of the correct answer goes here.",
+      "tags": [
+        "TCP",
+        "networking"
+      ]
+    },
+    {
+      "id": 9,
+      "subject": "OOPS",
+      "topic": "Polymorphism",
+      "difficulty": "Hard",
+      "question": "Sample question goes here.",
+      "code": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Option A"
+        },
+        {
+          "id": "B",
+          "text": "Option B"
+        },
+        {
+          "id": "C",
+          "text": "Option C"
+        },
+        {
+          "id": "D",
+          "text": "Option D"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Explanation of the correct answer goes here.",
+      "tags": [
+        "polymorphism",
+        "OOP"
+      ]
+    },
+    {
+      "id": 10,
+      "subject": "Pseudocode",
+      "topic": "Arrays",
+      "difficulty": "Medium",
+      "question": "Sample question goes here.",
+      "code": "WRITE PSEUDOCODE HERE",
+      "options": [
+        {
+          "id": "A",
+          "text": "Option A"
+        },
+        {
+          "id": "B",
+          "text": "Option B"
+        },
+        {
+          "id": "C",
+          "text": "Option C"
+        },
+        {
+          "id": "D",
+          "text": "Option D"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Explanation of the correct answer goes here.",
+      "tags": [
+        "arrays",
+        "pseudocode"
+      ]
+    }
+  ]
+}
