@@ -1,1 +1,337 @@
-You can update this file to add your questions.
+{
+  "quiz": {
+    "title": "Daily CSE Mock Test",
+    "description": "Custom 10-question Core CSE practice test",
+    "subject": "Computer Networks",
+    "durationMinutes": 15,
+    "totalQuestions": 10
+  },
+  "questions": [
+    {
+      "id": 1,
+      "subject": "Computer Networks",
+      "topic": "OSI Model",
+      "difficulty": "Easy",
+      "question": "Which OSI layer is responsible for logical addressing and routing packets between different networks?",
+      "code": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Data Link Layer"
+        },
+        {
+          "id": "B",
+          "text": "Network Layer"
+        },
+        {
+          "id": "C",
+          "text": "Transport Layer"
+        },
+        {
+          "id": "D",
+          "text": "Session Layer"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The Network Layer is responsible for logical addressing, routing, and forwarding packets between different networks.",
+      "tags": [
+        "OSI",
+        "network-layer"
+      ]
+    },
+    {
+      "id": 2,
+      "subject": "Computer Networks",
+      "topic": "TCP/IP",
+      "difficulty": "Medium",
+      "question": "Which protocol is primarily used to reliably transfer data between two applications while providing connection-oriented communication?",
+      "code": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "UDP"
+        },
+        {
+          "id": "B",
+          "text": "IP"
+        },
+        {
+          "id": "C",
+          "text": "TCP"
+        },
+        {
+          "id": "D",
+          "text": "ARP"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "TCP is a connection-oriented transport-layer protocol that provides reliable, ordered, and error-checked delivery of data.",
+      "tags": [
+        "TCP",
+        "transport-layer"
+      ]
+    },
+    {
+      "id": 3,
+      "subject": "Computer Networks",
+      "topic": "IP Addressing",
+      "difficulty": "Medium",
+      "question": "A network uses the subnet mask 255.255.255.192. How many usable host addresses are available in each subnet?",
+      "code": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "30"
+        },
+        {
+          "id": "B",
+          "text": "62"
+        },
+        {
+          "id": "C",
+          "text": "64"
+        },
+        {
+          "id": "D",
+          "text": "126"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The mask /26 leaves 6 host bits, giving 2^6 = 64 addresses. Two addresses are reserved for the network and broadcast addresses, leaving 62 usable host addresses.",
+      "tags": [
+        "subnetting",
+        "IP-addressing"
+      ]
+    },
+    {
+      "id": 4,
+      "subject": "Computer Networks",
+      "topic": "Routing",
+      "difficulty": "Medium",
+      "question": "Which routing algorithm is traditionally associated with the Distance Vector routing approach?",
+      "code": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Dijkstra's algorithm"
+        },
+        {
+          "id": "B",
+          "text": "Bellman-Ford algorithm"
+        },
+        {
+          "id": "C",
+          "text": "RSA algorithm"
+        },
+        {
+          "id": "D",
+          "text": "Kruskal's algorithm"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Distance Vector routing is based on the Bellman-Ford algorithm, where routers iteratively calculate the best distance to destinations using information received from neighboring routers.",
+      "tags": [
+        "routing",
+        "distance-vector"
+      ]
+    },
+    {
+      "id": 5,
+      "subject": "Computer Networks",
+      "topic": "Data Link Layer",
+      "difficulty": "Medium",
+      "question": "In Ethernet networks, which protocol is traditionally used to determine the MAC address associated with a known IPv4 address?",
+      "code": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "DNS"
+        },
+        {
+          "id": "B",
+          "text": "DHCP"
+        },
+        {
+          "id": "C",
+          "text": "ARP"
+        },
+        {
+          "id": "D",
+          "text": "ICMP"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "ARP, or Address Resolution Protocol, resolves a known IPv4 address to its corresponding MAC address on a local network.",
+      "tags": [
+        "ARP",
+        "MAC-address",
+        "data-link-layer"
+      ]
+    },
+    {
+      "id": 6,
+      "subject": "Computer Networks",
+      "topic": "Transport Layer",
+      "difficulty": "Hard",
+      "question": "A TCP connection has a congestion window of 16 KB and receives three duplicate ACKs. Which TCP mechanism is primarily triggered by three duplicate ACKs?",
+      "code": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Slow Start"
+        },
+        {
+          "id": "B",
+          "text": "Fast Retransmit"
+        },
+        {
+          "id": "C",
+          "text": "Connection Termination"
+        },
+        {
+          "id": "D",
+          "text": "Delayed ACK"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Three duplicate ACKs indicate a likely packet loss, causing TCP to trigger Fast Retransmit without waiting for the retransmission timeout.",
+      "tags": [
+        "TCP",
+        "congestion-control",
+        "fast-retransmit"
+      ]
+    },
+    {
+      "id": 7,
+      "subject": "Computer Networks",
+      "topic": "DNS",
+      "difficulty": "Easy",
+      "question": "Which DNS record type is used to map a domain name directly to an IPv4 address?",
+      "code": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "AAAA"
+        },
+        {
+          "id": "B",
+          "text": "MX"
+        },
+        {
+          "id": "C",
+          "text": "CNAME"
+        },
+        {
+          "id": "D",
+          "text": "A"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "An A record maps a domain name to an IPv4 address. An AAAA record is used for IPv6 addresses.",
+      "tags": [
+        "DNS",
+        "IPv4",
+        "application-layer"
+      ]
+    },
+    {
+      "id": 8,
+      "subject": "Computer Networks",
+      "topic": "Network Devices",
+      "difficulty": "Easy",
+      "question": "Which network device primarily operates at the Data Link Layer and forwards frames using MAC addresses?",
+      "code": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Router"
+        },
+        {
+          "id": "B",
+          "text": "Switch"
+        },
+        {
+          "id": "C",
+          "text": "Repeater"
+        },
+        {
+          "id": "D",
+          "text": "Gateway"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A traditional Layer 2 switch forwards Ethernet frames based on destination MAC addresses.",
+      "tags": [
+        "switch",
+        "MAC-address",
+        "network-devices"
+      ]
+    },
+    {
+      "id": 9,
+      "subject": "Computer Networks",
+      "topic": "HTTP and HTTPS",
+      "difficulty": "Medium",
+      "question": "Which statement correctly describes HTTPS compared with HTTP?",
+      "code": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "HTTPS encrypts HTTP communication using TLS"
+        },
+        {
+          "id": "B",
+          "text": "HTTPS eliminates the need for IP addresses"
+        },
+        {
+          "id": "C",
+          "text": "HTTPS operates only on private networks"
+        },
+        {
+          "id": "D",
+          "text": "HTTPS guarantees that the server cannot be compromised"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "HTTPS uses HTTP over TLS, providing encryption and authentication mechanisms for the communication between the client and server.",
+      "tags": [
+        "HTTP",
+        "HTTPS",
+        "TLS"
+      ]
+    },
+    {
+      "id": 10,
+      "subject": "Computer Networks",
+      "topic": "Subnetting",
+      "difficulty": "Hard",
+      "question": "An organization has the network 192.168.10.0/24 and needs at least 14 usable host addresses in each subnet. Which subnet prefix provides the maximum number of equal-sized subnets while satisfying this requirement?",
+      "code": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "/27"
+        },
+        {
+          "id": "B",
+          "text": "/28"
+        },
+        {
+          "id": "C",
+          "text": "/29"
+        },
+        {
+          "id": "D",
+          "text": "/30"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A /28 subnet has 4 host bits, giving 16 total addresses and 14 usable host addresses after excluding the network and broadcast addresses. It therefore provides the maximum number of equal-sized subnets while meeting the requirement.",
+      "tags": [
+        "subnetting",
+        "CIDR",
+        "IP-addressing"
+      ]
+    }
+  ]
+}
