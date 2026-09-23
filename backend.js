@@ -148,7 +148,7 @@ async function initializeQuiz() {
  */
 async function loadQuizData() {
 
-    const response = await fetch(QUESTION_FILE);
+    const response = await fetch(QUESTION_FILE + "?v=" + Date.now());
 
     if (!response.ok) {
         throw new Error(
